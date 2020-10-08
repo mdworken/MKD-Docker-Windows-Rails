@@ -16,7 +16,10 @@ To fix this, you need to enable experimental features for Docker:
 4. Check Experimental features
 5. Hit Apply
 
-## 'standard_init_linux.go:190: exec user process caused “no such file or directory' and other CRLF vs LF issues
+## 'standard_init_linux.go:190: exec user process caused “no such file or directory' and other
+This bizarre error message is actually just a CRLF vs LF line ending issue, and is the most common error we see. Continue reading below!
+
+## CRLF vs LF issues
 These are caused by your windows machine trying to read Windows-style line endings thinking they're Unix-style line endings. I'm working to make more repos handle this automagically, but if that is not working there may be useful information [here](https://docs.github.com/en/free-pro-team@latest/github/using-git/configuring-git-to-handle-line-endings). It is possible to manually change your line endings from CRLF - LF locally, but I'd recommend just removing the repository locally and re-cloning it.
 
 If you would like your repo to handle this better, please steal the contents of our .gitattributes.example and add them to your repository's .gitattributes
@@ -33,6 +36,6 @@ To fix this:
 3. Click on Exploit protection settings.
 4. Click on Program settings
 5. For the programs ending in vmcompute.exe and vmwp.exe change the system overrides as necessary so that:
-  1. Arbitrary Code Guard is disabled.
-  2. Code Flow Guard is disabled.
+  A. Arbitrary Code Guard is disabled.
+  B. Code Flow Guard is disabled.
 6. Reboot your computer and attempt to run Docker-Desktop again. It should be able to run now!
