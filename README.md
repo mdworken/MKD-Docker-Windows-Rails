@@ -1,7 +1,9 @@
 tl;dr If you want to develop Rails apps on Windows, the best way to do so is using Docker-Desktop. Below are several common problems when doing so + recommended solutions. If you have issues developing Rails applications on Docker-Desktop, please reach out so we can debug together and improve these documents further!
 
-# The blabitty part
+# Motivation
 As members of the Ruby on Rails community, we must take our duties to Social Justice and Social Responsibility seriously. This includes being as welcoming as possible to newcomers, which means *we need to support people developing on the machines they have, not just the machines we wish they had*.  And luckily, with the advent of WSL2, and the return of mainstream Docker support to Windows 10 Home (previously gated to only pro or higher versions) there has never been a better time to develop Rails applications on Windows.
+
+# Issues and recommended resolutions
 
 ## Windows version incompatible with Docker-Desktop
 If you cannot install Docker-Desktop on Windows 10 Home initially, you'll need to ensure:
