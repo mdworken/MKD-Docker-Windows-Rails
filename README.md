@@ -19,7 +19,7 @@ To fix this, you need to enable experimental features for Docker:
 ## 'standard_init_linux.go:190: exec user process caused “no such file or directory' and other CRLF vs LF issues
 These are caused by your windows machine trying to read Windows-style line endings thinking they're Unix-style line endings. I'm working to make more repos handle this automagically, but if that is not working there may be useful information [here](https://docs.github.com/en/free-pro-team@latest/github/using-git/configuring-git-to-handle-line-endings). It is possible to manually change your line endings from CRLF - LF locally, but I'd recommend just removing the repository locally and re-cloning it.
 
-If you would like your repo to handle this better, please add the following line to your .gitattributes "text=auto eol=lf".
+If you would like your repo to handle this better, please steal the contents of our .gitattributes.example and add them to your repository's .gitattributes
 
 
 ## Docker-Desktop used to boot but now it doesn't. Help!
