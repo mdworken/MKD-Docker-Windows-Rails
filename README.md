@@ -2,7 +2,7 @@
 If you cannot install Docker-Desktop on Windows 10 Home initially, you'll need to ensure:
 1. You're on Windows 10 version 2009 or greater. If you are not you'll need to use System Update to upgrade your system.
 2. You have installed Windows Subsystem for Linux 2 (WSL2). 
-3. You have enabled CPU virtualization in your BIOS.9
+3. You have enabled CPU virtualization in your BIOS.
 
 ## No matching manifest for Windows
 ex: Step 1/21 : FROM ruby:2.6.5-slim-buster
